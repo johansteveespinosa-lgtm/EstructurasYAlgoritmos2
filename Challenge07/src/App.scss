@@ -1,0 +1,33 @@
+
+$primary-color: #3157d5;
+$background-color: #f4f7fb;
+$text-color: #24324a;
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+h1,
+h2,
+h4 {
+  font-weight: 700;
+}
+
+.card {
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(36, 50, 74, 0.10) !important;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover {
+    background-color: darken($primary-color, 8%);
+    border-color: darken($primary-color, 8%);
+  }
+}
