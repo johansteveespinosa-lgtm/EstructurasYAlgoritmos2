@@ -1,0 +1,164 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #1e293b;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+h1 {
+    color: #60a5fa;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+h2 {
+    color: #1e293b;
+    margin-top: 20px;
+}
+
+.auth-form,
+.tasks-section {
+    width: 100%;
+    max-width: 650px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.auth-form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background: #ffffff;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #64748b;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #3b82f6;
+    border-color: #3b82f6;
+}
+
+button {
+    padding: 12px 15px;
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 4px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+.tasks-section > button {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.tasks-section hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 25px 0;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.task-item {
+    padding: 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: #f8fafc;
+}
+
+.task-item h3 {
+    color: #1d4ed8;
+    margin-top: 0;
+}
+
+.task-item p {
+    color: #475569;
+    overflow-wrap: anywhere;
+}
+
+.task-item button {
+    margin-top: 10px;
+}
+
+.tasks-section > p {
+    color: #475569;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 500px) {
+    .tasks-section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .task-item button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
